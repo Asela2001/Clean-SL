@@ -1,5 +1,5 @@
 //import Job from "../Models/jobs.js";
-import Job from "../Models/jobs.js"; es
+import Job from "../Models/Jobs.js";
 
 // Get all jobs (sorted by newest first)
 export const getAllJobs = async (req, res) => {
