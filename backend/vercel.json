@@ -5,15 +5,14 @@
       "src": "src/server.js",
       "use": "@vercel/node",
       "config": {
-        "includeFiles": ["src/**", ".env"]
+        "includeFiles": ["src/**"] // Include all files in src
       }
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "src/server.js",
-      "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"]
+      "src": "/api/(.*)",
+      "dest": "src/server.js"
     }
   ]
 }

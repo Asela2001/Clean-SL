@@ -13,7 +13,7 @@ const Home = () => {
     const fetchJobs = async () => {
       setLoading(true);
       try {
-        const response = await axios.get("http://localhost:5001/api/jobs");
+        const response = await axios.get(`http://localhost:5001/api/jobs`);
         setJob(response.data);
         console.log(response.data);
       } catch (error) {
